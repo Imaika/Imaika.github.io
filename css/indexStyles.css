@@ -42,6 +42,7 @@ h2{
     padding-left: 1cm;
 }
 #cursos img{
+    flex: auto;
     padding: 0.2cm;
     margin-right: 0.5cm;
     border-style:solid;
