@@ -27,8 +27,7 @@ aside{
     border-style:solid;
     color: #D8D2C2;
 }
-#videos{
-    padding: 0.2;
+#videos {
     text-align: center;
     color: #D8D2C2;
     border-style:solid;
@@ -39,6 +38,7 @@ h2{
     color: #D8D2C2;
 }
 #cursos{
+    display: flex;
     padding-left: 1cm;
 }
 #cursos img{
