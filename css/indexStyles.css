@@ -40,6 +40,7 @@ h2{
 #cursos{
     display: flex;
     padding-left: 1cm;
+    padding-right: 9cm;
 }
 #cursos img{
     flex: auto;
