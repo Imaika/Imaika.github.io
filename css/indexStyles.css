@@ -1,0 +1,54 @@
+header{
+    background-color:#B17457;
+    text-align:center;
+    color: #D8D2C2;
+}
+html{
+    background-color: #D8D2C2;
+    padding: 0.3cm;
+}
+nav{
+    line-height: 200%;
+    background-color: #faf0d8;
+}
+ul.menu li{
+    color: #4A4947;
+    display: inline;
+    padding-right: 1cm;
+}
+aside{
+    float: right;
+    background-color: #B17457;
+    border-style:solid;
+    text-align: justify;
+    width: 8cm;
+}
+#redes{
+    border-style:solid;
+    color: #D8D2C2;
+}
+#videos{
+    padding: 0.2;
+    text-align: center;
+    color: #D8D2C2;
+    border-style:solid;
+}
+h2{
+    background-color:#B17457;
+    text-align:center;
+    color: #D8D2C2;
+}
+#cursos{
+    padding-left: 1cm;
+}
+#cursos img{
+    padding: 0.2cm;
+    margin-right: 0.5cm;
+    border-style:solid;
+    color: #4A4947;
+}
+footer{
+    background-color: #4A4947;
+    color: #D8D2C2;
+    text-align: center;
+}

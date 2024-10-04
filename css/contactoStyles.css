@@ -1,0 +1,28 @@
+header{
+    background-color:#B17457;
+    text-align:center;
+    color: #D8D2C2;
+}
+html{
+    background-color: #D8D2C2;
+    padding: 0.3cm;
+}
+nav{
+    line-height: 200%;
+    background-color: #faf0d8;
+}
+ul.menu li{
+    color: #4A4947;
+    display: inline;
+    padding-right: 1cm;
+}
+h2{
+    background-color:#B17457;
+    text-align:center;
+    color: #D8D2C2;
+}
+footer{
+    background-color: #4A4947;
+    color: #D8D2C2;
+    text-align: center;
+}
