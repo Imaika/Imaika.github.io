@@ -22,6 +22,14 @@ aside{
     border-style:solid;
     text-align: justify;
     width: 8cm;
+    height: auto;
+}
+main{
+    margin-right: 9cm;
+    margin-left: 1cm;
+}
+#textoBienvenida{
+    text-align: justify;
 }
 #redes{
     border-style:solid;
@@ -39,15 +47,24 @@ h2{
 }
 #cursos{
     display: flex;
+    flex-wrap: wrap;
+    
+}
+.curso{
+    display: flex;
+    border-style: solid;
+    background-color: #faf0d8;
+}
+.cursotexto{
+    text-align: justify;
     padding-left: 1cm;
-    padding-right: 9cm;
+    padding-right: 1cm;
+    border-left-style: solid;
 }
 #cursos img{
-    flex: auto;
+    height: auto;
     padding: 0.2cm;
-    margin-right: 0.5cm;
-    border-style:solid;
-    color: #4A4947;
+    margin-right: 20%;
 }
 footer{
     background-color: #4A4947;
