@@ -1,24 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name "viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/adminStyles.css">
-        <title>admin</title>
-    </head>
-    <header>
-        <h1>Titulo historia</h1>
-    </header>
-    <body>
-        <div>
-            <h1 id="welcome">asdasd</h1>
-            <script src="js/scriptsAdmin.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name "viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Iceberg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/adminStyles.css">
+    <title>admin</title>
+</head>
+<header>
+    <h1>La Senda Perdida</h1>
+    <aside><a href="index.html">Volver al inicio</a></aside>
+</header>
+
+<body>
+    <div class="bienvenida">
+        <h2 id="welcome">aaa</h2>
+        <script src="js/scriptsAdmin.js"></script>
+    </div>
+    <div class="container">
+        <div class="btn-group">
+            <button type="button" class="btn btn-success" onclick="toggleForm('form1')">Agregar Capitulo</button>
+            <button type="button" class="btn btn-danger" onclick="toggleForm('form2')">Eliminar Capitulo</button>
+            <button type="button" class="btn btn-warning" onclick="toggleForm('form3')">Modificar Capitulo</button>
         </div>
-    </body>
-    <footer>
-        <p>Creado por: Imanol Janse</p>
-    </footer>
+        
+        <div id="form1" class="form-container">
+            <div class="form-group">
+                <label for="nombreCap">Nombre del capitulo:</label>
+                <input type="text" id="nombreCap">
+            </div>
+            <div class="form-group">
+                <label for="capitulo">Ingresar Capitulo:</label><br>
+                <textarea name="textCap" id="capitulo" rows="25" cols="40">
+                </textarea>
+            </div>
+            <button type="button" class="btn btn-success" type="submit">Subir Capitulo</button>
+        </div>
+        
+        <div id="form2" class="form-container">
+            <div class="form-group">
+                <label for="capitulosEliminar">Selecciona capituolo a eliminar</label>
+                <input list="listaCapitulos" id="capitulosEliminar" name="capitulosEliminar"> 
+
+                <datalist id="listaCapitulos">
+                    <option value="Capitulo 1"></option>
+                    <option value="Capitulo 2"></option>
+                    <option value="Capitulo 3"></option>
+                    <option value="Capitulo 4"></option>
+                </datalist>
+            </div>
+            <button type="button" class="btn btn-danger" type="submit">Eliminar Capitulo Seleccionado</button>
+        </div>
+
+        <div id="form3" class="form-container">
+            <div class="form-group">
+                <label for="capitulosEditar">Selecciona capituolo a editar</label>
+                <input list="listaCapitulos" id="capitulosEditar" name="capitulosEditar"> 
+
+                <datalist id="listaCapitulos">
+                    <option value="Capitulo 1"></option>
+                    <option value="Capitulo 2"></option>
+                    <option value="Capitulo 3"></option>
+                    <option value="Capitulo 4"></option>
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label for="capitulo">Ingresar Capitulo:</label><br>
+                <textarea name="textCap" id="capitulo" rows="25" cols="40">
+                </textarea>
+            </div>
+            <button type="button" class="btn btn-success" type="submit">Confirmar Edicion</button>
+        </div>
+    </div>
+    <script src="js/scriptsAdmin.js"></script>
+</body>
+<footer>
+    <p>Creado por: Imanol Janse</p>
+</footer>
+
 </html>
