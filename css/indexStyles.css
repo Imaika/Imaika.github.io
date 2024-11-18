@@ -130,13 +130,9 @@ footer {
     }
 
     .main{
-        zoom: 200%;
+        font-size: 25px;
     }
     
-    html{
-        zoom: 150%;
-        height: 100%;
-    }
 }
 
 
