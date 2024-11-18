@@ -128,6 +128,9 @@ footer {
     .login{
         max-width: 90%;
     }
+        html{
+        zoom: 150%;
+    }
 }
 
 
