@@ -1,0 +1,108 @@
+html{
+    background-image:url(../multimedia/img/senderoCaras.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px; 
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    padding: 2px;
+    background-image:url(../multimedia/img/senderoCaras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 80px;
+}
+
+.container {  display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "texto imagen"
+      "formulario formulario";
+    background-color: #344e41;
+    width: 100%;
+    
+  }
+  
+  .texto { 
+    grid-area: texto;
+    font-family: "Iceberg", sans-serif; 
+    text-align: justify;
+    padding: 20px;
+    color: white;
+    margin: 10px;
+    zoom: 150%;
+}
+  
+  .imagen { 
+    grid-area: imagen;
+    margin: 10px;
+    zoom: 150%;
+}
+
+img{
+    width: 100%;
+}
+  
+  .formulario { 
+    grid-area: formulario;
+    margin: 10px;
+    color: white;
+    zoom: 125%;
+    border-top: dashed gray;
+}
+
+#boton{
+    text-align: center;
+}
+
+footer {
+    background-color: #353d39;
+    text-align: center;
+    color: #b1bdc7;
+}
+
+h1{
+    font-family: "Ballet", cursive;
+    font-size: 100px;
+}
+
+h2{
+    font-family: "Ballet", cursive;
+    font-size: 100px;
+}
+
+h3{
+    font-family: "Iceberg", sans-serif;
+}
+
+
+@media (max-width: 1440px) {
+    
+    html{
+        height: 100%;
+        background-size: cover;
+        background-repeat: repeat;
+        zoom: 125%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "texto"
+        "imagen"
+        "formulario";
+        font-size: 25px;
+    }
+
+}

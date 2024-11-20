@@ -1,0 +1,133 @@
+html{
+    background-image:url(../multimedia/img/bosqueTitulo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px; 
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    padding: 2px;
+    background-image:url(../multimedia/img/bosqueTitulo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 80px;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "texto texto texto"
+      "choose1 choose2 choose3";
+    background-color: #344e41;
+    width: 100%;
+    zoom: 150%;
+  }
+  
+.texto {
+    grid-area: texto;
+    color: white;
+}
+  
+.choose1 {
+    grid-area: choose1; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.choose2 { 
+    grid-area: choose2; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.choose3 { 
+    grid-area: choose3; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.choose1:hover, .choose2:hover, .choose3:hover{
+    zoom: 110%;
+}
+ 
+.texto { 
+    font-family: "Iceberg", sans-serif;
+    grid-area: texto; 
+    text-align: justify;
+    padding: 20px;
+    color: white;
+}
+
+a{
+    color: white;
+    font-family: "Iceberg", sans-serif;
+}
+
+a:hover{
+    color: white;
+}
+
+
+h1{
+    font-family: "Ballet", cursive;
+    font-size: 100px;
+}
+
+h2{
+    font-family: "Ballet", cursive;
+    font-size: 100px;
+}
+
+
+footer {
+    background-color: #353d39;
+    text-align: center;
+    color: #b1bdc7;
+}
+
+@media (max-width: 1440px) {
+    
+    html{
+        height: 100%;
+        background-size: cover;
+        background-repeat: repeat;
+        zoom: 125%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "texto"
+            "choose1" 
+            "choose2"
+            "choose3";
+    }
+
+    .container{
+        font-size: 25px;
+    }
+
+    img{
+        width: 75%;
+    }
+
+}
